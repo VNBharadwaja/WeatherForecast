@@ -1,0 +1,134 @@
+/**
+*   @author Anil Tirumalakanduri
+*   @version 1.0
+*/
+
+/* Top Margin of 20px from the banner */
+form {
+    margin-top: 20px;
+}
+
+/* The default caption-side is bottom for Bootstrap tables. Bring it to the top*/
+caption {
+    caption-side: top;
+    float: center;
+    color: #303030;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+table {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+
+/* Remove the default 1px top border to blend tables with the background */
+.table td, .table th {
+    border: none;
+}
+
+html {
+    height: 100%;
+}
+
+/* Create a gradient background for body to enhance the appearance */
+body {
+    background-image: linear-gradient(#3B5178, #FAFBFF);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+small {
+    font-size: 10px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    background-image: url("../images/banner.jpg");
+    width: 100%;
+    height: 150px;
+}
+
+/*  Override default styles from Bootstrap */
+.btn-primary {
+    font-family: Georgia, Serif;
+    background-color: #0073E6;
+    border-color: #0073E6;
+    border-radius: 1.25rem;
+}
+
+.btn-primary:hover {
+    background-color: #0073E6;
+    border-color: #0073E6;
+    border-radius: 1.25rem;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:active, .btn-primary:visited {
+    box-shadow: 0 0 0 .2rem rgba(0, 115, 230, 1);
+}
+
+.banner span {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    align: center;
+    line-height: 160px;
+    display: inline-block;
+    padding-top: 5px;
+    color: #ffffff;
+}
+
+/*  Reduce the font-size so that text doesn't go beyond the banner image,
+    remove offset so that the div doesnt take additional width */
+ @media only screen and (max-device-width:480px) {
+    .container .row .col-sm-8 {
+        margin-left: 0;
+    }
+    .banner span {
+        font-size: 15px;
+    }
+}
+
+/* Align the image/logo with text */
+.banner img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+/* Give some room for button */
+.formButton {
+    padding-left: 5px;
+}
+
+/*  I like this shape :) */
+.form-control {
+    border-radius: 1.25rem;
+}
+
+.averagePressure {
+    color: #303030;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+
+/* Create a transition effect when displaying the graph */
+.canvasDiv {
+    transition: opacity 0.5s;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.hiddenCanvasDiv {
+    opacity: 0;
+}
+
+#pressureUnits {
+    font-size: 15px;
+}
+
+/* Set max-width to 100% so that it doesn't expand beyond its parent div in any case*/
+#chartCanvas {
+    max-width: 100%;
+}
